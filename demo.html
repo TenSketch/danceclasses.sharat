@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dance Academy</title>
+</head>
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+<!--Import Google Icon Font-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+<!-- j query cdn link -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<link rel="stylesheet" href="css/style.css">
+<script src="./js/script.js"></script>
+
+<body>
+  <nav class="grey darken-4">
+    <div class="nav-wrapper grey darken-4">
+      <a href="#!" class="brand-logo"><img style="width: 3.8rem; margin-left: 25rem;" src="./images/sharat-logo.png"
+          alt=""></a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down" style="margin-right: 4rem;">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Dance Classes</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Trainers</a></li>
+        <li><a href="#">Media</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+
+  </nav>
+
+  <ul class="sidenav grey darken-1" id="mobile-demo">
+    <li>
+
+      <div class="background">
+        <img class="circle" src="./images/sharat-logo.png"
+          style="height: 64px; width: 64px; margin-left: 20px; margin-right: 20px;">
+      </div>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Dance Classes</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Trainers</a></li>
+    <li><a href="#">Media</a></li>
+    <li><a href="#">Contact Us</a></li>
+  </ul>
+
+
+  <!-- home slide -->
+
+  <div class="carousel carousel-slider">
+    <a id="first-slide" class="carousel-item" href="#one!">
+      <h1>Welcome to Sharat Prabath Dance Academy<br><button class="waves-effect waves-light btn  red lighten-1"><i
+            class="material-icons left">explore</i>Explore Our Classes</button>
+      </h1>
+      <img src="./images/bgimage.jpg">
+
+    </a>
+
+    <a id="sec" style="width: 100vw; height: 100vh; background-color: skyblue;" class="carousel-item" href="#two!">
+      <video src="./raanjhana-semi-classical-one-stop-dance.mp4" autoplay muted loop width="100%" height="100%"
+        style="object-fit: cover; "></video>
+      <h1>Join Us To Learn The ART OF STORY TELLING: KATHAK</h1>
+    </a>
+    <a id="third" class="carousel-item amber lighten-2" href="#three!">
+      <div id="left">
+       
+      </div>
+      <div id="right">
+        <div class="right-center">
+          <h1 class="center-align">About us</h1>
+          <p class="center-align">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet quo vero non nostrum.
+          </p>
+         </div>
+      </div>
+    </a>
+  </div>
+  <!-- <div style="width: 100%; height: 100%;" id="page1">
+
+    </div> -->
+
+  <!-- sid -->
+  <!-- <section class="row">
+
+  		
+    <div class="col s12 m6 l4">
+     <a href="#"> <img src="./images/kindpng_1442766.png" class="materialbox responsive-img card"></a>
+    </div>
+    <div class="col s12 m6 l4">
+      <img src="./images/kindpng_1442766.png" class="materialbox responsive-img card">
+    </div>
+    <div class="col s12 m6 l4">
+      <img src="./images/kindpng_1442766.png" class="materialbox responsive-img card">
+    </div>
+
+
+    <div class="col s12 m6 l4">
+      <img src="./images/kindpng_1442766.png" class="materialbox responsive-img card">
+    </div>
+  
+    <div class="col s12 m6 l4">
+      <img src="./images/kindpng_1442766.png" class="materialbox responsive-img card">
+    </div>
+    <div class="col s12 m6 l4">
+      <img src="./images/kindpng_1442766.png" class="materialbox responsive-img card">
+    </div>
+    
+   </section> -->
+
+
+
+  <!-- -------------courses------------- -->
+  <div class="page2">
+    <div class="courses">
+      <div class="course" id="course1"></div>
+      <div class="course" id="course2"></div>
+      <div class="course" id="course3"></div>
+      <div class="course" id="course4"></div>
+      <div class="course" id="course5"></div>
+      <div class="course" id="course6"></div>
+      <div class="course" id="course7"></div>
+      <div class="course" id="course8"></div>
+      <div class="course" id="course9"></div>
+      <div class="course" id="course10"></div>
+      <div class="course" id="course11"></div>
+      <div class="course" id="course12"></div>
+      <div class="course" id="course13"></div>
+    </div>
+    <h5>Explore our courses</h5>
+  </div>
+
+  <!-- roshni --> <!-- <a href="https://youtu.be/sHG3Sf6XN9g"></a> -->
+  <section class="masonry__gallery">
+    <div class="full-img" id="FullImgBox">
+      <a href="./about.html" id="FullImg"><img src="./about.html" alt=""></a>
+      <span onclick="closeFullImg()">X</span>
+    </div>
+    <div class="containers">
+
+      <h1 class="title"> Explore Our Classes </h1>
+      <div class="image-containers">
+        <div class="im" id="img1">
+
+          <img src="./images/gallery1.jpg" alt="" onclick="closeFullImg()">
+        </div>
+        <div class="im" id="img2">
+
+          <img src="./images/gallery2.jpg" alt="" onclick="closeFullImg()">
+        </div>
+        <div class="im" id="img3">
+
+          <img src="./images/gallery 3.jpg" alt="" onclick="closeFullImg()">
+        </div>
+        <div class="im" id="img4">
+
+          <img src="./images/gallery 4.jpg" alt="" onclick="closeFullImg()">
+        </div>
+        <div class="im" id="img5">
+
+          <img src="./images/gallery 5.jpg" alt="" onclick="closeFullImg()">
+        </div>
+        <div class="im" id="img7">
+
+          <img src="./images/img2.jpg" alt="" onclick="closeFullImg()">
+        </div>
+        <div class="im" id="img8">
+
+          <img src="./images/bgimage.jpg" alt="" onclick="closeFullImg()">
+        </div>
+        <div class="im" id="img9">
+
+          <img src="./images/gallery1.jpg" alt="" onclick="closeFullImg()">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!--footer  -->
+  <footer class="page-footer grey darken-4">
+    <div class="container ">
+      <div class="row ">
+        <div class="col l6 s12">
+          <h5 class="white-text">Contact Us </h5>
+          <p class="grey-text text-">You can use rows and columns here to organize your footer content.</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Links</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#!">example@gmail.com</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">+91 xxxxxxxxx</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        © 2014 Copyright Text
+        <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Or with jQuery
+
+    $(document).ready(function () {
+      $(".sidenav").sidenav();
+
+    });
+    $(".carousel.carousel-slider").carousel({
+      fullWidth: true,
+      indicators: true
+    });
+
+
+  </script>
+
+<script>
+  window.addEventListener('load', (eve) => {
+    
+    let im = document.querySelectorAll('.im');
+    
+  })
+  </script>
+
+<script src="./js/script.js"></script>
+</body>
+
+</html>

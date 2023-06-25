@@ -1,0 +1,364 @@
+/* CSS custom variables */
+:root {
+    --clr-primary: #e09090;
+    --font-medium: 500;
+  
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gilroy";
+  
+  }
+  
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+  }
+  
+  
+  nav {
+    height: 70px;
+    position: fixed;
+    z-index: 9;
+    background-color: var(--clr-primary);
+  }
+  
+  .logo {
+    width: 7vh;
+    height: auto;
+  }
+  
+  
+  .carousel-slider {
+    width: 100%;
+    min-height: 100vh;
+    max-height: 100vh;
+  }
+  
+  #first-slide {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://i.pinimg.com/564x/db/33/78/db33783779d09180fc04e57d68f88cf8.jpg);
+    background-size: cover;
+    background-position: 0% 50%;
+    background-repeat: no-repeat;
+    background-color: rgb(255, 149, 0);
+  }
+  
+  .carousel .carousel-item>img {
+    width: 60rem;
+    /* height: 80%; */
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  #first-slide>h1 {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+    border: 2px solid #fff;
+    box-shadow: 5px 5px 10px #fff;
+  }
+  
+  #sec>h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    font-size: 6rem;
+    font-weight: 700;
+    text-align: center;
+    color: transparent;
+    -webkit-text-stroke: 5px #fff;
+    mix-blend-mode: difference;
+    color: var(--clr-primary);
+  }
+  
+  #third {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(249, 166, 41);
+  }
+  
+  #left {
+    width: 100%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1535725525385-bc19d13c503c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1888&q=80);
+    background-size: cover;
+    background-position: center
+  }
+  
+  #right {
+    text-align: center;
+    padding: 2rem 3rem;
+    width: 50%;
+    height: 100%;
+    margin-top: 100px;
+    position: relative;
+  }
+  
+  .right-center{
+    width: 80%;
+    position: absolute;
+    top: 35%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+  }
+  
+  
+  .classes {
+    min-height: 50vh;
+  
+  }
+  
+  .classes h1 {
+    color: var(--clr-primary);
+    text-align: center;
+  }
+  
+  /* * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .masonry__gallery {
+    width: 100%;
+    display: grid;
+    grid-auto-flow: dense;
+    grid-template: "1fr 1fr 1fr " 33.33vh
+      "1fr 1fr 1fr " 33.33vh
+      "1fr 1fr 1fr " 33.33vh;
+  
+  }
+  
+  .photo {}
+  
+  .a {
+    grid-row: span 2;
+  }
+  
+  .b {} */
+  /* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  
+  } */
+  
+  /* -----------courses--------------- */
+  .page2 {
+    width: 100%;
+    height: 100vh;
+    background-color: red;
+    position: relative;
+  }
+  
+  .page2 h5 {
+    /* background-color: aqua; */
+    position: absolute;
+    top: 92%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .courses {
+    width: 100%;
+    min-height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  
+  }
+  
+  .courses {
+    grid-template-areas:
+      "b1 b1 b7 b7 b12 b12"
+      "b2 b2 b7 b7 b12 b12"
+      "b3 b3 b8 b8 b9 b9"
+      "b4 b4 b8 b8 b9 b9"
+      "b5 b5 b10 b10 b13 b13"
+      "b6 b6 b11 b11 b13 b13";
+  }
+  
+  .course {
+    background-color: green;
+    /* padding: 10px; */
+    gap: 10px;
+    border: 2px solid black;
+  }
+  
+  #course1 {
+    grid-area: b1;
+    color: red;
+  }
+  
+  #course2 {
+    grid-area: b2;
+    color: black;
+  
+  }
+  
+  #course3 {
+    grid-area: b3;
+    background-color: yellow;
+  
+  }
+  
+  #course4 {
+    grid-column: b4;
+    background-color: cyan;
+  
+  }
+  
+  #course5 {
+    grid-area: b5;
+    color: pink;
+  }
+  
+  #course6 {
+    grid-area: b6;
+    background-color: aqua;
+  }
+  
+  #course7 {
+    grid-area: b7;
+    background-color: blueviolet;
+  }
+  
+  #course8 {
+    grid-area: b8;
+    background-color: darkorchid;
+  }
+  
+  #course9 {
+    grid-area: b9;
+    background-color: darkslategray;
+  }
+  
+  #course10 {
+    grid-area: b10;
+    background-color: bisque;
+  }
+  
+  #course11 {
+    grid-area: b11;
+    background-color: azure;
+  }
+  
+  #course12 {
+    grid-area: b12;
+    background-color: darkgoldenrod;
+  }
+  
+  #course13 {
+    grid-area: b13;
+    background-color: yellowgreen;
+  }
+  
+  
+  .containers {
+    max-width: 85%;
+    margin: 20px auto;
+  }
+  
+  .containers .title {
+    text-transform: uppercase;
+    font-size: 25px;
+    background-color: #ffffff;
+    color: rgb(232, 44, 44);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 15px;
+  }
+  
+  .containers .image-containers {
+    column-count: 3;
+    gap: 5px;
+  }
+  
+  .containers .image-containers img {
+    border-radius: 2px;
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  .im {
+    position: relative;
+    background-color: red;
+    overflow: hidden !important;
+    height: fit-content;
+    margin-bottom: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .im img {
+    object-fit: cover;
+    border: 1px solid black;
+    transition: all 1s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .im:hover img {
+    transform: scale(1.05);
+  }
+  
+  
+  /* footer */
+  /* body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+  
+  main {
+    flex: 1 0 auto;
+  } */
+  
+  
+  @media (min-width: 600px) {
+  
+  
+    .courses {
+      grid-template-areas: "b1 b1 b2 b3 b4 b4"
+        "b1 b1 b2 b5 b6 b7"
+        "b10 b11 b2 b5 b8 b8"
+        "b10 b12 b2 b5 b8 b8"
+        "b10 b12 b9 b9 b8 b8"
+        "b13 b13 b9 b9 b8 b8";
+    }
+  
+   
+  
+  }
+  @media (max-width: 600px) {
+    #third
+     { grid-template-columns: repeat(1, 2fr);}
+    .right-center{
+      width: 100%;
+      position: absolute;
+      top: 20%;
+      margin-left: 2rem;
+    }
+    
+  }
+  
